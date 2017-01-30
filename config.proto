@@ -1,0 +1,23 @@
+encoding "utf8"; 
+
+TTextMinerConfig {
+  Dictionary = "dic.gzt"; 
+  
+  PrettyOutput = "PrettyOutput.html"; 
+
+  Input = {
+    File = "CurrentBook.txt"; 
+  }
+  Output = {
+    File = "CurrentOutput.xml";
+    Format = xml; 
+  }
+
+  Facts = [
+    { Name = "Occupation" }
+  ]
+
+  Articles = [
+    { Name = "факт_грамматика" } 
+  ]
+}

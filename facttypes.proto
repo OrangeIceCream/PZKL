@@ -1,0 +1,9 @@
+import "base.proto";
+import "facttypes_base.proto";
+
+message Occupation: NFactType.TFact 
+{
+  required string Person = 1;
+  optional string Org = 2;
+  optional string Job = 3;
+}
